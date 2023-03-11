@@ -190,6 +190,10 @@ pyrightconfig.json
 # .tfstate files
 *.tfstate
 *.tfstate.*
+*.terraform.tfstate
+*.terraform.tfstate.backup
+*..terraform.lock.hcl
+
 
 # Crash log files
 crash.log
