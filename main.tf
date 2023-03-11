@@ -46,7 +46,7 @@ resource "azurerm_resource_group" "t10" {
   }
 }
 
-#teste1
+#teste2
 
 /*
 # Criando o bucket Raw
