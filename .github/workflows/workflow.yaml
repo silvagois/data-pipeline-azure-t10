@@ -29,7 +29,7 @@ jobs:
       run:
         shell: bash
  
-steps:
+    steps:
 
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
@@ -40,25 +40,29 @@ steps:
       with:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'fmt'
-        tf_actions_working_dir: "./terraform"         
+        tf_actions_working_dir: "./terraform"
+        
     - name: 'Terraform Init'
       uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'init'
-        tf_actions_working_dir: "./terraform" 
+        tf_actions_working_dir: "./terraform"
+
     - name: 'Terraform Validate'
       uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'validate'
-        tf_actions_working_dir: "./terraform"         
+        tf_actions_working_dir: "./terraform"
+
     - name: 'Terraform Plan'
       uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'plan'
-        tf_actions_working_dir: "./terraform"         
+        tf_actions_working_dir: "./terraform"
+
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       #run: terraform apply -auto-approve -input=false

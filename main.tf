@@ -46,6 +46,8 @@ resource "azurerm_resource_group" "t10" {
   }
 }
 
+#teste
+
 /*
 # Criando o bucket Raw
 resource "azurerm_storage_account" "raw_bucket" {
