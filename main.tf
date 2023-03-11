@@ -37,7 +37,7 @@ resource "azurerm_resource_group" "t10" {
   }
 }
 
-resource "azurerm_resource_group" "t10" {
+resource "azurerm_resource_group" "t10-teste" {
   name     = "Teste"
   location = "eastus"  
   tags = {
