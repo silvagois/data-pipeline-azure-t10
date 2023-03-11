@@ -14,6 +14,17 @@ provider "azurerm" {
   features {}
 }
 
+# Configuração para armazenar o estado do terraform
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "t10-terraform-state"
+    storage_account_name = "t10terraformstate"
+    container_name       = "tfstate"
+    key                  = "staging.terraform.tfstate"
+  }
+}
+
+
 # Creating a resource group
 resource "azurerm_resource_group" "t10" {
   name     = "t10-resource-group"
@@ -24,6 +35,7 @@ resource "azurerm_resource_group" "t10" {
   }
 }
 
+/*
 # Criando o bucket Raw
 resource "azurerm_storage_account" "raw_bucket" {
   name                     = "rawbucket"
@@ -32,6 +44,7 @@ resource "azurerm_storage_account" "raw_bucket" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
+
 
 # Criando o bucket Landing
 resource "azurerm_storage_account" "landing_bucket" {
@@ -50,4 +63,4 @@ resource "azurerm_storage_account" "curated_bucket" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
-
+*/

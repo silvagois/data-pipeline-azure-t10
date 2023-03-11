@@ -193,6 +193,12 @@ pyrightconfig.json
 *.terraform.tfstate
 *.terraform.tfstate.backup
 *..terraform.lock.hcl
+.terraform.tfstate
+.terraform.tfstate.backup
+.terraform.lock.hcl
+/.terraform.tfstate
+/.terraform.tfstate.backup
+/.terraform.lock.hcl
 
 
 # Crash log files
