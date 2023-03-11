@@ -15,6 +15,7 @@ provider "azurerm" {
 }
 
 # Configuração para armazenar o estado do terraform
+
 terraform {
   backend "azurerm" {
     resource_group_name  = "t10-terraform-state"
@@ -26,9 +27,19 @@ terraform {
 
 
 # Creating a resource group
+
 resource "azurerm_resource_group" "t10" {
   name     = "t10-resource-group"
-  location = "eastus"
+  location = "eastus"  
+  tags = {
+    "env" : "staging"
+    "project" : "t10-azure-challenge"
+  }
+}
+
+resource "azurerm_resource_group" "t10" {
+  name     = "Teste"
+  location = "eastus"  
   tags = {
     "env" : "staging"
     "project" : "t10-azure-challenge"
