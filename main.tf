@@ -82,7 +82,7 @@ resource "azurerm_storage_container" "curated" {
 
 
 
-#teste2
+#teste3
 
 /*
 # Criando o bucket Raw
