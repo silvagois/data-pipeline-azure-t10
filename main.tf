@@ -79,37 +79,4 @@ resource "azurerm_storage_container" "curated" {
   storage_account_name  = azurerm_storage_account.sa.name
   container_access_type = "private"
 }
-
-
-
-#teste6
-
-/*
-# Criando o bucket Raw
-resource "azurerm_storage_account" "raw_bucket" {
-  name                     = "rawbucket"
-  resource_group_name      = azurerm_resource_group.bucket_rg.name
-  location                 = azurerm_resource_group.bucket_rg.location
-  account_tier             = "Standard"
-  account_replication_type = "LRS"
-}
-
-
-# Criando o bucket Landing
-resource "azurerm_storage_account" "landing_bucket" {
-  name                     = "landingbucket"
-  resource_group_name      = azurerm_resource_group.bucket_rg.name
-  location                 = azurerm_resource_group.bucket_rg.location
-  account_tier             = "Standard"
-  account_replication_type = "LRS"
-}
-
-# Criando o bucket Curated
-resource "azurerm_storage_account" "curated_bucket" {
-  name                     = "curatedbucket"
-  resource_group_name      = azurerm_resource_group.bucket_rg.name
-  location                 = azurerm_resource_group.bucket_rg.location
-  account_tier             = "Standard"
-  account_replication_type = "LRS"
-}
-*/
+#end1
