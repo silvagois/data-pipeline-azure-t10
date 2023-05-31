@@ -27,4 +27,3 @@
 - Diretorio notebook, foi onde fiz os testes
 - Arquivo Workflow no diretorio .github, era para implementar a automatização do deploy da infra terraform, porém apresentou alguns erros de autenticação com a azure.
 
-image.png
