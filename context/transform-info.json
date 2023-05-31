@@ -1,7 +1,7 @@
 {
     "transform-info": [
         {
-            "connect_string": "Sua srtring de conexao"            
+            "connect_string": "DefaultEndpointsProtocol=https;AccountName=t10storageaccount;AccountKey=+SRaplCEmzyqKRW+3j0jd79Qo6eganpiz+56yobjx5zAFwMuUk7eQeB9T/WfdutiI4VryBsc0oQm+AStxlYVng==;EndpointSuffix=core.windows.net"            
         }
     ]
 }
